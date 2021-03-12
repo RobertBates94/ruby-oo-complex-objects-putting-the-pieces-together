@@ -1,4 +1,4 @@
-class Shoes
+class Shoe
     attr_accessor :color, :size, :material, :condition, :repaired
     attr_reader :brand
 
@@ -8,6 +8,11 @@ class Shoes
 
     def brand
         @brand
+    end
+
+    def cobble
+        @condition = "new"
+        puts "Your shoe is as good as new!"
     end
 
 end
